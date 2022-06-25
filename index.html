@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: rgb(223, 223, 223);
+        height: 100vh;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .row {
+        flex-direction: row;
+      }
+      .videowrap {
+        flex-wrap: wrap;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgl8 {
+        margin-left: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .yinYing {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+    </style>
+  </head>
+  <body class="flex column">
+    <!-- 顶部栏 -->
+    <div style="height: 200px" class="flex column">
+      <!-- 菜单栏 -->
+      <div style="height: 60px" class="flex row mg8">
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+        <div style="width: 60px" class="mgr8 baiSe yinYing"></div>
+      </div>
+      <!-- 海报超链接区域 -->
+      <div style="height: 140px" class="flex">
+        <div
+          style="
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 20px;
+            color: blue;
+          "
+          class="flex row flex1 mg8 baiSe"
+        >
+          bilibili
+          <!-- <img src="../img/top.jpeg" width="200px" alt="" /> -->
+        </div>
+      </div>
+    </div>
+    <!-- 主界面 -->
+    <div class="flex flex1 column mg8">
+      <!-- 分区栏 -->
+      <div style="height: 80px" class="flex row">
+        <div style="flex: 2" class="row flex">
+          <div style="width: 50px" class="flex baiSe yinYing mgr8"></div>
+          <div style="width: 50px" class="flex baiSe yinYing mgr8"></div>
+          <div style="width: 50px" class="flex baiSe yinYing mgr8"></div>
+        </div>
+        <!-- 番剧电影等等 -->
+        <div style="flex: 6; align-items: center" class="row flex mg8">
+          <div
+            style="flex-wrap: wrap; width: 80px; height: 40px"
+            class="flex baiSe mgr8 mgl8"
+          ></div>
+          <div
+            style="flex-wrap: wrap; width: 80px; height: 40px"
+            class="flex baiSe mgr8"
+          ></div>
+          <div
+            style="flex-wrap: wrap; width: 80px; height: 40px"
+            class="flex baiSe mgr8"
+          ></div>
+        </div>
+        <div style="flex: 2" class="row flex">
+          <div style="flex: 2" class="row flex">
+            <div style="width: 50px" class="flex baiSe yinYing mg8"></div>
+            <div style="width: 50px" class="flex baiSe yinYing mg8"></div>
+            <div style="width: 50px" class="flex baiSe yinYing mg8"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 视频区 -->
+      <div class="flex flex1 column mg8">
+        <!-- 首页推荐区域 -->
+        <div style="height: 400px" class="flex row">
+          <!-- 左区 循环广告区域 -->
+          <div style="flex: 3" class="row flex baiSe yinYing mg8"></div>
+          <!-- 右区 个人推荐视频区 -->
+          <div style="flex: 5; align-items: center" class="row flex videowrap">
+            <div
+              style="width: 192px; height: 102px"
+              class="flex mg8 baiSe"
+            ></div>
+            <div
+              style="width: 192px; height: 102px"
+              class="flex mg8 baiSe"
+            ></div>
+            <div
+              style="width: 192px; height: 102px"
+              class="flex mg8 baiSe"
+            ></div>
+            <div
+              style="width: 192px; height: 102px"
+              class="flex mg8 baiSe"
+            ></div>
+            <div
+              style="width: 192px; height: 102px"
+              class="flex mg8 baiSe"
+            ></div>
+            <div
+              style="width: 192px; height: 102px"
+              class="flex mg8 baiSe"
+            ></div>
+          </div>
+        </div>
+        <!-- 推广区 -->
+        <div style="height: 200px" class="flex row">
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+        </div>
+        <!-- 赛事区 -->
+        <div style="height: 200px" class="flex row">
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+          <div class="flex flex1 mg8 baiSe yinYing"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
